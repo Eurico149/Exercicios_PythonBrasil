@@ -3,9 +3,9 @@ def veri(endereco):
 
     def ponto(lista):
         tupla = []
-        for i in range(len(lista)):
-            if lista[i] == ".":
-                tupla.append(i)
+        for j in range(len(lista)):
+            if lista[j] == ".":
+                tupla.append(j)
         return tuple(tupla)
 
     pontos = ponto(endereco)
@@ -39,5 +39,6 @@ with open("arquivo.txt", "w") as arquivo:
     arquivo.write("\n[Enderecos invalidos:]\n")
     for e in range(len(invalidos)):
         arquivo.write(invalidos[e])
+
 print(validos)
 print(invalidos)
