@@ -11,10 +11,10 @@ class Pessoa:
             self.crescer(0.5)
 
     def engordar(self, peso):
-        self.__peso += peso
+        self.__peso += abs(peso)
 
     def emagrecer(self, peso):
-        self.__peso -= peso
+        self.__peso -= abs(peso)
 
     def crescer(self, cm):
         self.__altura += cm
